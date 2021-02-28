@@ -1,0 +1,32 @@
+The LGAS is a small compute system that can be built cheaply. Here's an explaination:
+
++ + + +
++ + + +
++ + + +
++ + + +
+
+^^^^^^^
+The above is an LGAS, with a 4 by 4 instruction set, 8-bits.
+
+We can use the LGAS for Logic, like so:
+
+
+I - - O1
++ + + +
++ + + +
++ + + +
+
+^^^^^^^
+In the above diagram, the LGAS has an Input at (0, 0), Hence the "I" there. 
+At the far right (3, 0) we have an output that is on, hence the O1 there.
+
+To make logic, we can do something like:
+
+I O1 - O0
+- | - -
+- | - -
+- I - -
+  
+In this example, the I at the bottom cuts of the I in the northwest corner, so it winds up outputting at (1, 0)
+
+Then more logic can be applied using logic gates and checking the state of certain pins.
